@@ -1,207 +1,175 @@
-# Teacher Training Prompt Repository
+# Teaching Prompts Repository
 
-## What Is This?
+A free, open library of **1,980 ready-to-use AI prompts** for school education across **four major boards** (Cambridge, ICSE, CBSE, Telangana State) and **all 12 grades**. Paste any prompt into a free AI chatbot (ChatGPT, Claude, Gemini, etc.) and instantly turn it into a subject-specific tutor, trainer, quiz designer, or writing coach.
 
-This is a collection of **483 ready-to-use AI prompts** designed to help school teachers improve how they teach every subject, across every grade (1–12), for four major education boards:
+---
 
-| Board | Grades | Focus |
-|-------|--------|-------|
-| **Cambridge** | Grades 1–12 | Cambridge Primary, Lower Secondary, IGCSE, AS & A Level |
-| **ICSE** | Classes 1–12 | ICSE (CISCE) and ISC curriculum |
-| **CBSE** | Classes 1–12 | CBSE / NCF-aligned curriculum |
-| **Telangana State** | Classes 1–12 | SCERT, SSC, and TSBIE (Intermediate) curriculum |
+## What's Inside
 
-Each prompt turns any AI chatbot into an **expert teacher trainer** for a specific board, grade, and subject — covering lesson planning, classroom activities, assessments, handling mixed-ability students, and more.
+The repository contains **five different kinds of prompts** for every board and grade. Each one is built for a different person and a different purpose:
+
+| Prompt Type | Who It's For | What It Does |
+|---|---|---|
+| **Teacher Training** | School teachers | Trains the teacher on *how* to teach a subject — lesson planning, classroom strategies, handling mixed-ability students, assessment design. |
+| **Parent Training** | Parents / guardians | Helps parents support their child's learning at home with age-appropriate explanations, activity ideas, and common-mistake guidance. |
+| **Student Simulation** | Teachers & parents (practice tool) | The AI *acts like* a real student of that grade — including realistic misconceptions — so adults can rehearse explanations and test teaching approaches. |
+| **Diagnostic Quiz Generator** | Teachers & parents | Generates diagnostic quizzes that reveal what a student actually knows, understands, or struggles with — designed to guide learning, not to grade. |
+| **Writing Mentor** | Students (with adult oversight) | A patient writing coach that gives guided feedback and practice — it will *never* write the essay for the student. |
+
+### Coverage at a Glance
+
+| Board | Grades | Subjects per grade | Boards-specific framework |
+|---|---|---|---|
+| **Cambridge** | Grades 1–12 | Cambridge Primary, Lower Secondary, IGCSE, AS & A Level subjects |
+| **ICSE** | Classes 1–12 | CISCE / ICSE / ISC subjects |
+| **CBSE** | Classes 1–12 | CBSE / NCF-aligned subjects |
+| **Telangana State** | Classes 1–12 | SCERT / SSC / TSBIE subjects |
+
+**Total: 1,980 prompts** = 4 boards × 12 grades × (Teacher Training + Parent Training + Student Simulation + Diagnostic Quiz, one per subject) + Writing Mentor (one per grade per board).
 
 ---
 
 ## Folder Structure
 
+Each board folder contains 12 class/grade folders. Each class/grade folder contains 5 sub-folders — one per prompt type — and each sub-folder holds one `.md` file per subject.
+
 ```
-Teaching prompt/
+teaching-prompts/
 ├── Cambridge/
 │   ├── Grade 1/
-│   │   ├── English - Grade 1 - Teacher Training Prompt.md
-│   │   ├── Mathematics - Grade 1 - Teacher Training Prompt.md
-│   │   └── ...
+│   │   ├── Teacher Training/
+│   │   │   ├── English - Grade 1 - Teacher Training Prompt.md
+│   │   │   ├── Mathematics - Grade 1 - Teacher Training Prompt.md
+│   │   │   └── ...
+│   │   ├── Parent Training/
+│   │   ├── Student Simulation/
+│   │   ├── Diagnostic Quiz Generator/
+│   │   └── Writing Mentor/
+│   │       └── Writing Mentor - Grade 1 Prompt.md
 │   ├── Grade 2/
 │   └── ... (up to Grade 12)
-├── ICSE/
-│   ├── Class 1/
-│   └── ... (up to Class 12)
-├── CBSE/
-│   ├── Class 1/
-│   └── ... (up to Class 12)
-└── Telangana State/
-    ├── Class 1/
-    └── ... (up to Class 12)
+├── ICSE/      (Class 1 – Class 12, same structure)
+├── CBSE/      (Class 1 – Class 12, same structure)
+└── Telangana State/  (Class 1 – Class 12, same structure)
 ```
 
----
-
-## How to Use These Prompts
-
-### Step 1: Find the Right Prompt
-
-1. Open the folder for your **board** (Cambridge, ICSE, CBSE, or Telangana State).
-2. Open the subfolder for your **class/grade** (e.g., Class 5).
-3. Find the `.md` file for your **subject** (e.g., `Mathematics - Class 5 - Teacher Training Prompt.md`).
-4. Open the file and **copy all the text** inside it.
-
-### Step 2: Paste into an AI Chatbot
-
-Open any of the AI tools listed below, start a new conversation, and **paste the entire prompt** as your first message. The AI will then act as your personal teacher trainer for that subject and grade.
+> **Note:** Writing Mentor is *cross-curricular* — there is one prompt per grade (not one per subject), since writing skills cut across all subjects.
 
 ---
 
-## Where to Use These Prompts (Free Options)
+## How to Use a Prompt (3 Steps)
 
-### 1. ChatGPT (by OpenAI)
+### Step 1 — Pick the right file
+1. Open the folder for your **board** (Cambridge / ICSE / CBSE / Telangana State).
+2. Open the folder for your **class or grade**.
+3. Open the folder for the **prompt type** you want (Teacher Training, Parent Training, etc.).
+4. Open the `.md` file for the **subject** you want.
 
-- **Website:** [https://chat.openai.com](https://chat.openai.com)
-- **Cost:** Free tier available (GPT-3.5); GPT-4o available with limits on the free plan
-- **How to use:**
-  1. Sign up with your Google or email account.
-  2. Click **"New Chat"**.
-  3. Paste the full prompt text into the message box and press Enter.
-  4. The AI will greet you as a teacher trainer — answer its questions and start your training session.
-- **Tip:** For best results, use the **"Custom Instructions"** feature (click your profile → Custom Instructions) and paste the prompt there. This way, every new chat in that conversation will remember your training setup.
+### Step 2 — Copy the entire file
+Select all the text in the `.md` file and copy it.
 
-### 2. Claude (by Anthropic)
+### Step 3 — Paste it into an AI chatbot
+Open a free AI tool (see list below), start a new conversation, and paste the entire prompt as your **first message**. The AI will switch into the role described in the prompt and start asking you questions.
 
-- **Website:** [https://claude.ai](https://claude.ai)
-- **Cost:** Free tier available (Claude Sonnet)
-- **How to use:**
-  1. Sign up with your Google or email account.
-  2. Click **"Start new chat"**.
-  3. Paste the full prompt text and send it.
-  4. Claude will begin your personalized teacher training session.
-- **Tip:** You can create a **"Project"** in Claude, paste the prompt into the Project Instructions, and every conversation inside that project will use the teacher trainer persona automatically.
-
-### 3. Google Gemini
-
-- **Website:** [https://gemini.google.com](https://gemini.google.com)
-- **Cost:** Free with a Google account
-- **How to use:**
-  1. Sign in with your Google account.
-  2. Start a new conversation.
-  3. Paste the prompt text and send.
-- **Tip:** Gemini works well for follow-up questions — ask it to create worksheets, quiz papers, or activity ideas after the initial training session.
-
-### 4. Microsoft Copilot
-
-- **Website:** [https://copilot.microsoft.com](https://copilot.microsoft.com)
-- **Cost:** Free with a Microsoft account
-- **How to use:**
-  1. Sign in with your Microsoft account.
-  2. Paste the prompt and start chatting.
-- **Tip:** If you use Microsoft Edge, Copilot is built right into the browser sidebar — just click the Copilot icon.
-
-### 5. Perplexity AI
-
-- **Website:** [https://www.perplexity.ai](https://www.perplexity.ai)
-- **Cost:** Free tier available
-- **How to use:**
-  1. Visit the website (no sign-up required for basic use).
-  2. Paste the prompt and start your session.
-- **Tip:** Perplexity can also search the web, so it's great for finding the latest syllabus updates or teaching resources alongside your training.
-
-### 6. HuggingChat
-
-- **Website:** [https://huggingface.co/chat](https://huggingface.co/chat)
-- **Cost:** Completely free and open-source
-- **How to use:**
-  1. Visit the website.
-  2. Optionally sign in for chat history.
-  3. Paste the prompt and begin.
-- **Tip:** A good fallback option if other services are at capacity.
-
-### 7. Poe (by Quora)
-
-- **Website:** [https://poe.com](https://poe.com)
-- **Cost:** Free tier available (access to multiple AI models)
-- **How to use:**
-  1. Sign up with your Google or email account.
-  2. Choose a bot (e.g., ChatGPT, Claude, or Gemini).
-  3. Paste the prompt and chat.
-- **Tip:** Poe lets you try different AI models with the same prompt — useful for comparing responses.
+That's it — no setup, no installation, no payment.
 
 ---
 
-## Tips for Parents
+## Free AI Tools That Work With These Prompts
 
-If you're a parent helping your child's teacher (or homeschooling), here's how to get the most from these prompts:
+All prompts are designed in plain text and work with any modern chatbot. The free options below all work well:
 
-**Start Simple:** Pick one subject your child struggles with, paste that prompt, and ask the AI for activity ideas or explanation strategies.
+### 1. ChatGPT — [chat.openai.com](https://chat.openai.com)
+Free tier with GPT-4o (limited usage). Sign up with Google/email → New Chat → paste prompt.
+**Tip:** For repeat use, save the prompt under *Custom Instructions* (profile menu) so every new chat keeps the trainer persona.
 
-**Ask Follow-Up Questions** like:
-- "Give me a fun activity to teach fractions to my Class 4 child at home."
-- "Create a simple worksheet for this topic."
-- "How do I explain photosynthesis in a way a 10-year-old will understand?"
-- "What are common mistakes students make in this topic?"
+### 2. Claude — [claude.ai](https://claude.ai)
+Free tier with Claude Sonnet. Sign up → Start new chat → paste.
+**Tip:** Create a *Project*, paste the prompt into Project Instructions, and every chat in that project automatically uses the persona.
 
-**Request Materials:** Ask the AI to create:
-- Weekly lesson plans
-- Practice worksheets
-- Quiz questions with answer keys
-- Flashcard content
-- Story-based explanations
+### 3. Google Gemini — [gemini.google.com](https://gemini.google.com)
+Free with any Google account. Best for follow-ups like "make a worksheet" or "draft a quiz."
 
-**Use Your Language:** You can tell the AI "Please explain in Telugu" or "Use simple Hindi" — most AI tools support multiple languages.
+### 4. Microsoft Copilot — [copilot.microsoft.com](https://copilot.microsoft.com)
+Free with a Microsoft account. Built into Microsoft Edge as a sidebar.
+
+### 5. Perplexity AI — [perplexity.ai](https://www.perplexity.ai)
+Free tier, no sign-up needed for basic use. Useful when you want the AI to also pull syllabus updates from the web.
+
+### 6. HuggingChat — [huggingface.co/chat](https://huggingface.co/chat)
+Completely free and open-source. A reliable fallback when other services are busy.
+
+### 7. Poe — [poe.com](https://poe.com)
+Free tier that lets you try the *same prompt* across ChatGPT, Claude, Gemini side-by-side.
+
+---
+
+## Picking the Right Prompt for Your Goal
+
+| If you want to… | Use this prompt type |
+|---|---|
+| Learn how to teach a topic better | **Teacher Training** |
+| Help your child with homework or revision at home | **Parent Training** |
+| Rehearse an explanation or anticipate student questions | **Student Simulation** |
+| Find out what a student actually knows or struggles with | **Diagnostic Quiz Generator** |
+| Help a student improve their writing without writing it for them | **Writing Mentor** |
 
 ---
 
 ## Tips for Teachers
 
-**Customize Your Session:** When the AI asks about your experience level and challenges, be specific. The more detail you give, the better the training.
+- **Be specific when the AI asks about your context** — your experience level, class size, and student range. The more detail, the better the advice.
+- **Ask for differentiated versions:** *"Give me three versions of this activity — easy, medium, and hard."*
+- **Request ready-made resources:** lesson plans, rubrics, warm-ups, exit tickets, exam papers with marking schemes.
+- **Loop back:** after trying a strategy in class, tell the AI what worked and what didn't, and it will adjust.
 
-**Ask for Differentiation:** Say things like:
-- "I have students ranging from very weak to advanced in my class. How do I handle this for this topic?"
-- "Give me three versions of this activity — easy, medium, and hard."
+## Tips for Parents
 
-**Get Ready-Made Resources:**
-- "Create a rubric for assessing Class 8 English creative writing."
-- "Design a 40-minute lesson plan for teaching quadratic equations."
-- "Give me 5 warm-up activities for a Class 3 EVS lesson on plants."
-
-**Reflect and Improve:** After trying a suggested strategy, come back and tell the AI what worked and what didn't. It will adjust its recommendations.
+- **Start with one subject** your child finds difficult.
+- **Ask in your own language:** *"Please explain in Telugu / Hindi / simple English."* Most chatbots are multilingual.
+- **Ask for activities, not lectures:** *"Give me a 15-minute fun activity to teach fractions to my Class 4 child."*
+- **Use the Diagnostic Quiz prompt first** to see where your child stands before deciding what to focus on.
 
 ---
 
 ## Frequently Asked Questions
 
 **Q: Do I need to pay anything?**
-No. All the tools listed above have free tiers that work perfectly with these prompts. The prompts themselves are completely free.
+No. The prompts are free, and every AI tool listed above has a free tier that works.
 
 **Q: Can I use these on my phone?**
-Yes. ChatGPT, Claude, Gemini, and Copilot all have mobile apps (Android and iOS). You can also use them in your phone's browser.
+Yes. ChatGPT, Claude, Gemini, and Copilot all have Android and iOS apps. The web versions also work in any mobile browser.
 
-**Q: The AI's response got cut off. What do I do?**
+**Q: The AI's response got cut off — what now?**
 Just type **"please continue"** and it will pick up where it left off.
 
-**Q: Can I modify the prompts?**
-Absolutely. These are starting templates. Feel free to add your own instructions, change the language, or focus on specific topics.
+**Q: Can I edit the prompts?**
+Yes — they're starting templates. Add your own context (school name, syllabus chapter, language preference) at the top before pasting.
 
 **Q: Which AI tool is best?**
-They all work well. ChatGPT and Claude tend to give the most detailed teacher training responses. Google Gemini is great if you already use Google. Try a couple and see which one you prefer.
+ChatGPT and Claude tend to give the most detailed pedagogical responses. Gemini is great if you're already in the Google ecosystem. Try a couple and stick with what feels right.
 
-**Q: Can the AI create exam papers?**
-Yes! After pasting the prompt, ask something like: "Create a half-yearly exam paper for Class 7 Mathematics following the CBSE pattern, with marking scheme."
+**Q: I teach multiple subjects — should I combine prompts?**
+No. Start a *separate chat* for each subject/grade combination. Mixing prompts confuses the AI and dilutes accuracy.
 
-**Q: What if I teach multiple subjects or grades?**
-Start a separate chat for each subject/grade combination using the appropriate prompt file. This keeps the AI focused and accurate.
+**Q: Can the Student Simulation actually tell me what my students will get wrong?**
+The simulated student is built to display realistic, age-appropriate misconceptions for the board and grade — so yes, it's a good rehearsal tool, but real students will always surprise you in their own way.
+
+**Q: Will the Writing Mentor write my child's essay for them?**
+No — it is explicitly designed to refuse and to coach instead. That's the point.
 
 ---
 
 ## Quick Start (60 Seconds)
 
-1. Go to [chat.openai.com](https://chat.openai.com) or [claude.ai](https://claude.ai)
-2. Open the right `.md` file from this folder (e.g., `CBSE/Class 5/Mathematics - Class 5 - Teacher Training Prompt.md`)
-3. Copy everything inside the file
-4. Paste it into the AI chat and press Send
-5. Answer the AI's introductory questions
-6. Start your personalized teacher training session!
+1. Go to [chat.openai.com](https://chat.openai.com) or [claude.ai](https://claude.ai).
+2. Open the right `.md` file, e.g.
+   `CBSE/Class 5/Teacher Training/Mathematics - Class 5 - Teacher Training Prompt.md`
+3. Copy everything inside it.
+4. Paste into the chatbot and press Send.
+5. Answer the AI's intro questions.
+6. Start your session.
 
 ---
 
-*This prompt repository covers 4 boards × 12 grades × all board-specific subjects = 483 teacher training prompts. Created for empowering teachers and parents across Cambridge, ICSE, CBSE, and Telangana State curricula.*
+*Built to empower teachers, parents, and students across Cambridge, ICSE, CBSE, and Telangana State curricula. Prompts are free to use, share, and adapt.*
